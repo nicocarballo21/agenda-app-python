@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(212, 211, 211);
+  overflow: hidden;
+}
+#boton_delete,
+#boton_edit {
+  width: 100px;
+}
+
+#btn_success {
+  background-color: #198754;
+}
+
+.border-red {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+.border-green {
+  border: 1px solid rgb(103, 207, 42);
+}
+
+form div:focus {
+  outline: none;
+}
+form div div {
+  display: flex;
+}
+
+.icon__error {
+  margin-left: 10px;
+  margin-top: 6px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.icon__success {
+  margin-left: 0.5rem;
+  margin-top: 6px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.invalid-feedback {
+  text-align: center;
+  width: 15em;
+  margin: auto;
+  font-size: 0.875em;
+  color: #dc3545;
+}

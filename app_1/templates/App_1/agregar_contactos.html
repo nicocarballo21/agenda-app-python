@@ -1,0 +1,24 @@
+{% extends 'App_1/base.html' %} {% block content %} {% load crispy_forms_tags %} {% load static %}
+<div class="row">
+  <div class="col-xl-4 offset-xl-4 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
+    <div class="card">
+      <div class="card-body">
+        <p class="display-6">Agendar contactos</p>
+        <hr />
+
+        <form action="" method="post" id="form">
+          {% csrf_token %} {{form | crispy}}
+
+          <hr />
+
+          <div class="d-grid gap-1">
+            <button type="submit" class="btn btn-success" id="btn_success">Agendar</button>
+            <a href=" {% url 'app:listar' %}" class="btn btn-danger">Atras</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
